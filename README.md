@@ -1,14 +1,3 @@
-# 시작
-
- $ npm install   or yarn install   // dependency 설치
- $ npm run start or yarn run start  // 시작
- 
- 
- https://reactstudy-pozci.run.goorm.io/
- 
-
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
