@@ -11,6 +11,7 @@ const menuList = [
 		children: [
 			{ link: '/test', name: '테스트1' },
 			{ link: '/id-test/123', name: '테스트123' },
+			{ link: '/id-test/345', name: '테스트345' },
 		],
 	},
 ];
