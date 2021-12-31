@@ -26,4 +26,13 @@ module.exports = babelJest.createTransformer({
 	],
 	babelrc: false,
 	configFile: false,
+	plugins: [
+		[
+			"babel-plugin-root-import",
+			{
+				"rootPathSuffix": "./src/",
+				"rootPathPrefix": "@/"
+			}
+		]
+	]
 });
