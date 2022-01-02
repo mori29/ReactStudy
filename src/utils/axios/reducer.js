@@ -4,19 +4,19 @@ function reducer(state, action) {
     switch (action.type) {
         case Types.LOADING:
             return {
-                loading: true,
+                type: Types.LOADING,
                 data: null,
                 error: null
             };
         case Types.SUCCESS:
             return {
-                loading: false,
+                type: Types.SUCCESS,
                 data: action.data,
                 error: null
             };
         case Types.ERROR:
             return {
-                loading: false,
+                type: Types.ERROR,
                 data: null,
                 error: action.error
             };
