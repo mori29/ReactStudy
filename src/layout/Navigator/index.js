@@ -3,7 +3,7 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { APIs, useAsyncAxios, Types } from '@/utils/axios';
 import './style.scss';
 
-// // 메뉴 목록은 추후 axios 를 통해 비동기로 가져올 예정
+// // 메뉴목록: https://61d116a0cd2ee50017cc998e.mockapi.io/api/v1/menu-list
 // const menuList2 = [
 // 	{ id: 1, link: '/', name: '홈', children: [] },
 // 	{

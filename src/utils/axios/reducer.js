@@ -9,15 +9,10 @@ function reducer(state, action) {
                 error: null
             };
         case Types.SUCCESS:
-            return {
-                type: Types.SUCCESS,
-                data: action.data,
-                error: null
-            };
         case Types.ERROR:
             return {
-                type: Types.ERROR,
-                data: null,
+                type: action.type,
+                data: action.data,
                 error: action.error
             };
         default:
