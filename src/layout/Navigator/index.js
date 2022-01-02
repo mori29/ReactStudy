@@ -83,11 +83,15 @@ function Menu( { item, activeIndex, onSelect } ) {
 				// eslint-disable-next-line jsx-a11y/anchor-is-valid
 				: <a onClick={onSelect} data-id={item.id}> {item.name} </a>
 			}
-			<div className="children">
-				<ul>
-					{ item.children.map( child => <Submenu key={child.id} link={child.link} name={child.name} /> ) }
-				</ul>
-			</div>
+			{
+				isActive && item.children.length > 0 && (
+					<div className="children">
+						<ul>
+							{ item.children.map( child => <Submenu key={child.id} link={child.link} name={child.name} /> ) }
+						</ul>
+					</div>
+				)
+			}
 		</li>
 	);
 }
